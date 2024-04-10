@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeckaGames</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para los formularios */
+        #login-form,
+        #register-form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para los campos de entrada */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para el botón */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JeckaGames</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="consolas.html">Consolas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>Iniciar Sesión o Registrarse</h2>
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Nombre de Usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button onclick="login()">Iniciar Sesión</button>
+            <p>¿No tienes una cuenta? <a href="#" onclick="showRegisterForm()">Regístrate</a></p>
+        </div>
+        <div id="register-form" style="display: none;">
+            <input type="text" id="new-username" placeholder="Nuevo Nombre de Usuario">
+            <input type="password" id="new-password" placeholder="Nueva Contraseña">
+            <button onclick="register()">Registrarse</button>
+            <p>¿Ya tienes una cuenta? <a href="#" onclick="showLoginForm()">Iniciar Sesión</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JeckaGames</p>
+    </footer>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            // Aquí puedes agregar la lógica para iniciar sesión.
+            // Por ejemplo, puedes enviar estos datos a un servidor para autenticar al usuario.
+            console.log("Iniciando sesión con:", username, password);
+        }
+
+        function register() {
+            var newUsername = document.getElementById("new-username").value;
+            var newPassword = document.getElementById("new-password").value;
+            // Aquí puedes agregar la lógica para registrar un nuevo usuario.
+            // Por ejemplo, puedes enviar estos datos a un servidor para crear una nueva cuenta.
+            console.log("Registrando nuevo usuario:", newUsername, newPassword);
+        }
+
+        function showRegisterForm() {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+        }
+
+        function showLoginForm() {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('register-form').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

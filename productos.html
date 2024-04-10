@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeckaGames</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos CSS para las imágenes */
+        .producto {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .producto img {
+            width: 200px; /* Tamaño deseado de las imágenes */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin-right: 20px;
+            border: 2px solid #ccc; /* Borde sólido de 2px con color gris */
+            border-radius: 10px; /* Borde redondeado */
+        }
+
+        .producto .caracteristicas {
+            flex: 1;
+        }
+
+        .producto h3 {
+            margin-top: 0;
+        }
+
+        .producto ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .producto li {
+            margin-bottom: 5px;
+        }
+
+        /* Colores */
+        .producto .caracteristicas {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .producto .caracteristicas ul {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JeckaGames</h1>
+        <nav>
+            <ul>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="consolas.html">Consolas</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="productos">
+        <h2>Productos</h2>
+
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEnVSZGPwqa55YE3zcYdc-3TtXQqdtvpOpbHxV1JY5vQ&s" alt="Consola Xbox">
+            <div class="caracteristicas">
+                <h3>Consola Xbox</h3>
+                <p>Características:
+                    <ul>
+                        <li>Capacidad de almacenamiento: 1TB</li>
+                        <li>Resolución de video: 4K</li>
+                        <li>Incluye control inalámbrico</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00889842716511l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Juego de mesa Monopoly">
+            <div class="caracteristicas">
+                <h3>Juego de mesa Monopoly</h3>
+                <p>Características:
+                    <ul>
+                        <li>Número de jugadores: 2-6</li>
+                        <li>Duración promedio de partida: 1-2 horas</li>
+                        <li>Incluye tablero, fichas, dinero y cartas</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="https://oc-games.com.ar/image/cache/data/Games/FIFA24-500x500.png" alt="Juego FIFA 24">
+            <div class="caracteristicas">
+                <h3>Juego FIFA 24</h3>
+                <p>Características:
+                    <ul>
+                        <li>Plataforma: PlayStation 5</li>
+                        <li>Género: Deportes</li>
+                        <li>Modos de juego: Carrera, Ultimate Team, Volta</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Agrega más productos de manera similar -->
+
+    </section>
+    <footer>
+        <p>&copy; 2024 JeckaGames</p>
+    </footer>
+</body>
+</html>
